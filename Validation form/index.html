@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="changelang">
+            <button id="en" onclick="openSite()">Klik hier om naar de Engelse pagina te gaan</button>
+        </div>
+
+        <h1>Validatie check</h1>
+
+        <form id=" val">
+            <div>
+                <label>*Selecteer een aanhef</label>
+                <select name="" id="val_gen" required>
+                    <option value="none">Geen</option>
+                    <option value="male">Dhr</option>
+                    <option value="notmale">Mvr</option>
+                </select>
+            </div>
+            <div>
+                <label for="">*Naam</label>
+                <input type="text" name="" id="val_name" required>
+            </div>
+            <div>
+                <label for="">*Addres</label>
+                <input type="text" name="" id="val_adres" required>
+            </div>
+            <div>
+                <label for="">*Stad</label>
+                <input type="text" name="" id="val_city" required>
+            </div>
+            <div>
+                <label for="">*Postcode</label>
+                <input type="text" name="" id="val_post" required>
+            </div>
+            <div>
+                <label for="">*Geboortedatum</label>
+                <input type="text" name="" id="val_birth" placeholder="voorbeeld: 20-04-1889" required>
+                <p id="age"></p>
+            </div>
+            <div>
+                <label for="">*Nationaliteit</label>
+                <input type="text" name="" id="val_nat" required>
+            </div>
+            <div>
+                <label for="">*Baan</label>
+                <input type="text" name="" id="val_job" required>
+            </div>
+            <div>
+                <label for="">Opmerkingen</label>
+                <input type="text" name="" id="val_comment">
+            </div>
+            <input type="submit" id="val_submit" value="bevestig">
+        </form>
+    </div>
+</body>
+
+</html>

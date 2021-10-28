@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="./script2.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="changelang">
+            <button id="en" onclick="openSite()">Click here to go to the dutch page</button>
+        </div>
+
+        <h1>Validation check</h1>
+
+        <form id=" val">
+            <div>
+                <label>*Select a salution</label>
+                <select name="" id="val_gen" required>
+                    <option value="none">None</option>
+                    <option value="male">Sir</option>
+                    <option value="notmale">Madame</option>
+                </select>
+            </div>
+            <div>
+                <label for="">*Name</label>
+                <input type="text" name="" id="val_name" required>
+            </div>
+            <div>
+                <label for="">*Adres</label>
+                <input type="text" name="" id="val_adres" required>
+            </div>
+            <div>
+                <label for="">*City</label>
+                <input type="text" name="" id="val_city" required>
+            </div>
+            <div>
+                <label for="">*Postal Code</label>
+                <input type="text" name="" id="val_post" required>
+            </div>
+            <div>
+                <label for="">*Date of birth</label>
+                <input type="text" name="" id="val_birth" placeholder="example: 18-12-1878" required>
+                <p id="age"></p>
+            </div>
+            <div>
+                <label for="">*Nationality</label>
+                <input type="text" name="" id="val_nat" required>
+            </div>
+            <div>
+                <label for="">*Job</label>
+                <input type="text" name="" id="val_job" required>
+            </div>
+            <div>
+                <label for="">Comment</label>
+                <input type="text" name="" id="val_comment">
+            </div>
+            <input type="submit" id="val_submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>

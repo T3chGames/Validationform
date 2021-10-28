@@ -1,0 +1,75 @@
+body {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    float: center;
+    clear: both;
+
+}
+
+#age {
+    opacity: 0;
+    margin: 0;
+}
+
+#en {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: rgb(46, 46, 46);
+    color: whitesmoke;
+    border-radius: 25px;
+    border: none;
+}
